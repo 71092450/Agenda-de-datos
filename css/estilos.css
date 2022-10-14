@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-fosforecente:#00ffe1;
+    --color-melon:#F1C40F;
+    --color-negro:#000;
+    --color-blanco:#fff;
+    --color-azul:#3079d9;
+    --fuente-principal:'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  font-family: var(--fuente-principal);
+}
+
+h1 {
+    font-size:38px;
+    font-weight: 900;
+    letter-spacing: 8px;
+
+}
+
+#cabecera h1 {
+    padding-bottom: 30px;
+}
+
+#cabecera {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-shadow:  3px 3px 2px rgba(0,0,0,0.66);
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+}
+
+#cajas {
+    background-color: var(--color-melon);
+}
+
+
+#pie {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    padding-top: 45px;
+    padding-bottom: 45px;
+    line-height: 36px;
+}
+
+#pie a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin: left 10px; ;
+}
+
+#pie .redes-sociales i{
+    font-size: 32px;
+}
+
+#pie .fila {
+    justify-content:space-between;
+}
+
+
+.espaciado {
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contenedor{
+    max-width: 80%;
+    margin-left: auto;/*Estilos para centrar el contenedor*/
+    margin-right: auto;
+ }
+
+ .fila {
+    display: flex;/* Activa flexbox*/
+    flex-direction: row; /* Coloca los elementos hijo 1 al lado del otro como una fila*/
+     
+    
+    /* anular el paddingn izquierdo y derecho de la primera y ultima columna */
+    margin-left: -15px;
+    margin-right: -15px;
+   }
+   
+   .columna {
+    flex-basis: 0px;/* Quita el hancho de las columnas*/
+    flex-grow: 1;/* Agranda el hancho de la columna en proporcion al numero de columnas exixtentes*/
+    
+    
+    /*Espaciado izquierdpo entre la columna y el contenedor*/
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.botones {
+    background-color:var(--color-fosforecente) ;
+    border: 2px solid #ff6550;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    
+
+}
+
+
+
+
+
+
